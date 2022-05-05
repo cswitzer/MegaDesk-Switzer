@@ -24,7 +24,8 @@ namespace MegaDesk_Switzer
 
         private void AddQuoteBtn_Click(object sender, EventArgs e)
         {
-            AddQuote addQuote = new AddQuote(this);
+            AddQuoteMenu addQuoteMenu = new AddQuoteMenu(this);
+            addQuoteMenu.Show();
             this.Hide();
         }
     }
