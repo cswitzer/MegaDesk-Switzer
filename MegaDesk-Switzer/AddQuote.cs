@@ -12,7 +12,7 @@ namespace MegaDesk_Switzer
         public AddQuote(MainMenu mainMenu)
         {
             this.mainMenu = mainMenu;
-            AddQuoteMenu addQuoteMenu = new AddQuoteMenu();
+            AddQuoteMenu addQuoteMenu = new AddQuoteMenu(this.mainMenu);
             addQuoteMenu.Show();
         }
     }

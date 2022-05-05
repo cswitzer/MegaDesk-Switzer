@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "AddQuoteMenu";
             this.Text = "Add Quote";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddQuoteMenu_FormClosed);
             this.ResumeLayout(false);
 
         }

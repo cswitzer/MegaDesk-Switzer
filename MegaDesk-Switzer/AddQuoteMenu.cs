@@ -12,9 +12,16 @@ namespace MegaDesk_Switzer
 {
     public partial class AddQuoteMenu : Form
     {
-        public AddQuoteMenu()
+        MainMenu mainMenu;
+        public AddQuoteMenu(MainMenu mainMenu)
         {
             InitializeComponent();
+            this.mainMenu = mainMenu;
+        }
+
+        private void AddQuoteMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            mainMenu.Show();
         }
     }
 }
