@@ -17,15 +17,30 @@ namespace MegaDesk_Switzer
             InitializeComponent();
         }
 
+        private void AddQuoteBtn_Click(object sender, EventArgs e)
+        {
+            AddQuote addQuoteMenu = new AddQuote(this);
+            addQuoteMenu.Show();
+            this.Hide();
+        }
+
+        private void ViewQuotesBtn_Click(object sender, EventArgs e)
+        {
+            ViewAllQuotes viewAllQuotes = new ViewAllQuotes(this);
+            viewAllQuotes.Show();
+            this.Hide();
+        }
+
+        private void SearchQuotesBtn_Click(object sender, EventArgs e)
+        {
+            SearchQuotes searchQuotes = new SearchQuotes(this);
+            searchQuotes.Show();
+            this.Hide();
+        }
+
         private void ExitBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void AddQuoteBtn_Click(object sender, EventArgs e)
-        {
-            AddQuote addQuote = new AddQuote(this);
-            this.Hide();
         }
     }
 }

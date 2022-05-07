@@ -9,4 +9,17 @@ C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk
 C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk-Switzer.csproj.CoreCompileInputs.cache
 C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk-Switzer.exe
 C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk-Switzer.pdb
-C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.AddQuoteMenu.resources
+C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\MegaDesk-Switzer.exe.config
+C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\MegaDesk-Switzer.exe
+C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\MegaDesk-Switzer.pdb
+C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk-Switzer.csprojAssemblyReference.cache
+C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.AddQuoteMenu.resources
+C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.MainMenu.resources
+C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.Properties.Resources.resources
+C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk-Switzer.csproj.GenerateResource.cache
+C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk-Switzer.csproj.CoreCompileInputs.cache
+C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk-Switzer.exe
+C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk-Switzer.pdb
+C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.AddQuote.resources
+C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.ViewAllQuotes.resources
+C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.SearchQuotes.resources

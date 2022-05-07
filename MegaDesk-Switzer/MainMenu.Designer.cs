@@ -54,6 +54,7 @@
             this.ViewQuotesBtn.TabIndex = 1;
             this.ViewQuotesBtn.Text = "View Quotes";
             this.ViewQuotesBtn.UseVisualStyleBackColor = true;
+            this.ViewQuotesBtn.Click += new System.EventHandler(this.ViewQuotesBtn_Click);
             // 
             // SearchQuotesBtn
             // 
@@ -64,6 +65,7 @@
             this.SearchQuotesBtn.TabIndex = 2;
             this.SearchQuotesBtn.Text = "Search Quotes";
             this.SearchQuotesBtn.UseVisualStyleBackColor = true;
+            this.SearchQuotesBtn.Click += new System.EventHandler(this.SearchQuotesBtn_Click);
             // 
             // ExitBtn
             // 

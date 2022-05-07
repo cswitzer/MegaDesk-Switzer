@@ -1,6 +1,6 @@
 ﻿namespace MegaDesk_Switzer
 {
-    partial class AddQuoteMenu
+    partial class SearchQuotes
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // AddQuoteMenu
+            // SearchQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "AddQuoteMenu";
-            this.Text = "Add Quote";
+            this.Name = "SearchQuotes";
+            this.Text = "Search Quotes";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SearchQuotes_FormClosed);
             this.ResumeLayout(false);
 
         }

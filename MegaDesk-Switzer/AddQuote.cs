@@ -1,19 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace MegaDesk_Switzer
 {
-    internal class AddQuote
+    public partial class AddQuote : Form
     {
-        public MainMenu mainMenu;
+        MainMenu _mainMenu;
         public AddQuote(MainMenu mainMenu)
         {
-            this.mainMenu = mainMenu;
-            AddQuoteMenu addQuoteMenu = new AddQuoteMenu();
-            addQuoteMenu.Show();
+            InitializeComponent();
+            this._mainMenu = mainMenu;
+        }
+
+        private void AddQuoteMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _mainMenu.Show();
         }
     }
 }
