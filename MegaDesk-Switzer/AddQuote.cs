@@ -16,7 +16,22 @@ namespace MegaDesk_Switzer
         public AddQuote(MainMenu mainMenu)
         {
             InitializeComponent();
+
             this._mainMenu = mainMenu;
+
+            // populate materials combobox
+            List<DesktopMaterial> materials = Enum.GetValues(typeof(DesktopMaterial))
+                .Cast<DesktopMaterial>()
+                .ToList();
+
+            comSurfaceMaterial.DataSource = materials;
+
+            // populate delivery combobox
+            List<RushOrderType> orders = Enum.GetValues(typeof(RushOrderType))
+                .Cast<RushOrderType>()
+                .ToList();
+
+            comDelivery.DataSource = orders;
         }
 
         private void AddQuoteMenu_FormClosed(object sender, FormClosedEventArgs e)
