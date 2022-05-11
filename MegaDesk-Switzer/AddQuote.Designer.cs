@@ -29,59 +29,87 @@
         private void InitializeComponent()
         {
             this.widthLabel = new System.Windows.Forms.Label();
-            this.heightLabel = new System.Windows.Forms.Label();
-            this.widthTextBox = new System.Windows.Forms.TextBox();
-            this.heightTextBox = new System.Windows.Forms.TextBox();
+            this.depthLabel = new System.Windows.Forms.Label();
+            this.widthUpDown = new System.Windows.Forms.NumericUpDown();
+            this.depthUpDown = new System.Windows.Forms.NumericUpDown();
+            this.customerNameLabel = new System.Windows.Forms.Label();
+            this.deskSizeGroupBox = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.widthUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.depthUpDown)).BeginInit();
+            this.deskSizeGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // widthLabel
             // 
             this.widthLabel.AutoSize = true;
             this.widthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.widthLabel.Location = new System.Drawing.Point(125, 75);
+            this.widthLabel.Location = new System.Drawing.Point(6, 34);
             this.widthLabel.Name = "widthLabel";
             this.widthLabel.Size = new System.Drawing.Size(63, 24);
             this.widthLabel.TabIndex = 0;
             this.widthLabel.Text = "Width:";
             // 
-            // heightLabel
+            // depthLabel
             // 
-            this.heightLabel.AutoSize = true;
-            this.heightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.heightLabel.Location = new System.Drawing.Point(500, 75);
-            this.heightLabel.Name = "heightLabel";
-            this.heightLabel.Size = new System.Drawing.Size(70, 24);
-            this.heightLabel.TabIndex = 1;
-            this.heightLabel.Text = "Height:";
+            this.depthLabel.AutoSize = true;
+            this.depthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.depthLabel.Location = new System.Drawing.Point(6, 74);
+            this.depthLabel.Name = "depthLabel";
+            this.depthLabel.Size = new System.Drawing.Size(65, 24);
+            this.depthLabel.TabIndex = 1;
+            this.depthLabel.Text = "Depth:";
             // 
-            // widthTextBox
+            // widthUpDown
             // 
-            this.widthTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.widthTextBox.Location = new System.Drawing.Point(129, 120);
-            this.widthTextBox.Name = "widthTextBox";
-            this.widthTextBox.Size = new System.Drawing.Size(100, 29);
-            this.widthTextBox.TabIndex = 2;
+            this.widthUpDown.Location = new System.Drawing.Point(72, 38);
+            this.widthUpDown.Name = "widthUpDown";
+            this.widthUpDown.Size = new System.Drawing.Size(120, 20);
+            this.widthUpDown.TabIndex = 2;
             // 
-            // heightTextBox
+            // depthUpDown
             // 
-            this.heightTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.heightTextBox.Location = new System.Drawing.Point(504, 120);
-            this.heightTextBox.Name = "heightTextBox";
-            this.heightTextBox.Size = new System.Drawing.Size(100, 29);
-            this.heightTextBox.TabIndex = 3;
+            this.depthUpDown.Location = new System.Drawing.Point(72, 79);
+            this.depthUpDown.Name = "depthUpDown";
+            this.depthUpDown.Size = new System.Drawing.Size(120, 20);
+            this.depthUpDown.TabIndex = 3;
+            // 
+            // customerNameLabel
+            // 
+            this.customerNameLabel.AutoSize = true;
+            this.customerNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerNameLabel.Location = new System.Drawing.Point(124, 70);
+            this.customerNameLabel.Name = "customerNameLabel";
+            this.customerNameLabel.Size = new System.Drawing.Size(152, 24);
+            this.customerNameLabel.TabIndex = 4;
+            this.customerNameLabel.Text = "Customer Name:";
+            // 
+            // deskSizeGroupBox
+            // 
+            this.deskSizeGroupBox.Controls.Add(this.widthLabel);
+            this.deskSizeGroupBox.Controls.Add(this.depthLabel);
+            this.deskSizeGroupBox.Controls.Add(this.depthUpDown);
+            this.deskSizeGroupBox.Controls.Add(this.widthUpDown);
+            this.deskSizeGroupBox.Location = new System.Drawing.Point(128, 124);
+            this.deskSizeGroupBox.Name = "deskSizeGroupBox";
+            this.deskSizeGroupBox.Size = new System.Drawing.Size(209, 125);
+            this.deskSizeGroupBox.TabIndex = 5;
+            this.deskSizeGroupBox.TabStop = false;
+            this.deskSizeGroupBox.Text = "Desk Size";
             // 
             // AddQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.heightTextBox);
-            this.Controls.Add(this.widthTextBox);
-            this.Controls.Add(this.heightLabel);
-            this.Controls.Add(this.widthLabel);
+            this.Controls.Add(this.deskSizeGroupBox);
+            this.Controls.Add(this.customerNameLabel);
             this.Name = "AddQuote";
             this.Text = "Add Quote";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddQuoteMenu_FormClosed);
+            ((System.ComponentModel.ISupportInitialize)(this.widthUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.depthUpDown)).EndInit();
+            this.deskSizeGroupBox.ResumeLayout(false);
+            this.deskSizeGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,8 +118,10 @@
         #endregion
 
         private System.Windows.Forms.Label widthLabel;
-        private System.Windows.Forms.Label heightLabel;
-        private System.Windows.Forms.TextBox widthTextBox;
-        private System.Windows.Forms.TextBox heightTextBox;
+        private System.Windows.Forms.Label depthLabel;
+        private System.Windows.Forms.NumericUpDown widthUpDown;
+        private System.Windows.Forms.NumericUpDown depthUpDown;
+        private System.Windows.Forms.Label customerNameLabel;
+        private System.Windows.Forms.GroupBox deskSizeGroupBox;
     }
 }
