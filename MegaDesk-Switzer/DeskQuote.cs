@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MegaDesk_Switzer
 {
-    enum RushOrderType
+    public enum RushOrderType
     {
         Express,
         Firstclass,

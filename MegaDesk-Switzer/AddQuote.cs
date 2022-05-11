@@ -32,6 +32,14 @@ namespace MegaDesk_Switzer
                 .ToList();
 
             comDelivery.DataSource = orders;
+
+            // set default combobox to -1
+            comSurfaceMaterial.SelectedIndex = comSurfaceMaterial.SelectedIndex = -1;
+
+            // set numericupdowns to empty
+            widthUpDown.Text = String.Empty;
+            depthUpDown.Text = String.Empty;
+            numDrawersUpDown.Text = String.Empty;
         }
 
         private void AddQuoteMenu_FormClosed(object sender, FormClosedEventArgs e)
