@@ -12,9 +12,14 @@ namespace MegaDesk_Switzer
 {
     public partial class DisplayQuote : Form
     {
-        public DisplayQuote()
+        private MainMenu _mainMenu;
+        private DeskQuote _deskQuote;
+        public DisplayQuote(MainMenu mainMenu, DeskQuote deskQuote)
         {
             InitializeComponent();
+
+            _mainMenu = mainMenu;
+            _deskQuote = deskQuote;
         }
     }
 }

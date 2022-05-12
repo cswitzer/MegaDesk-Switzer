@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace MegaDesk_Switzer
@@ -44,11 +45,33 @@ namespace MegaDesk_Switzer
             numDrawersUpDown.Text = String.Empty;
         }
 
+        private string GetDescription(Enum GenericEnum)
+        {
+            // gets all descriptions for any passed in enum
+            // this is known as reflection, where we programmatically pull attributes and methods from a class/enum/interface
+            Type genericEnumType = GenericEnum.GetType();
+            MemberInfo[] memberInfo = genericEnumType.GetMember(GenericEnum.ToString());
+
+            if (memberInfo != null && memberInfo.Length > 0)
+            {
+                var _Attribs = memberInfo[0].GetCustomAttributes(typeof(DescriptionAttribute), false);
+                if (_Attribs != null && _Attribs.Length > 0)
+                {
+                    return ((DescriptionAttribute)_Attribs.ElementAt(0)).Description;
+                }
+            }
+
+            return GenericEnum.ToString();
+        }
+
         private void SaveQuotes(List<DeskQuote> quotes)
         {
             var quotesFile = $@"quotes.json";
 
-            // serialize quotes
+            // serialize quotes (convert object to json text)
+            var serializedQuotes = System.Text.Json.JsonSerializer.Serialize(quotes);
+
+            File.WriteAllText(quotesFile, serializedQuotes);
         }
 
         private void AddQuoteMenu_FormClosed(object sender, FormClosedEventArgs e)
@@ -59,19 +82,39 @@ namespace MegaDesk_Switzer
         private void saveQuoteBtn_Click(object sender, EventArgs e)
         {
             // create new desk
+            var desk = new Desk()
+            {
+                Width = widthUpDown.Value,
+                Depth = depthUpDown.Value,
+                NumberOfDrawers = (int)numDrawersUpDown.Value,
+                DesktopMaterial = (DesktopMaterial)comSurfaceMaterial.SelectedValue
+            };
 
             // create new desk quote
+            var deskQuote = new DeskQuote()
+            {
+                CustomerName = customerNameText.Text,
+                Desk = desk,
+                QuoteDate = DateTime.Now,
+                OrderType = (RushOrderType)comDelivery.SelectedIndex // using index since we have desc.
+            };
 
             // get quote price
+            var quotePrice = deskQuote.GetQuotePrice();
 
             // add quote to file
+            deskQuote.QuotePrice = quotePrice;
 
             // show data in display quote form using the current deskQuote object (pass _mainMenu and deskQuote)
+            DisplayQuote displayQuote = new DisplayQuote(_mainMenu, deskQuote);
+            displayQuote.Show();
+            this.Hide();
         }
 
         private void cancelBtn_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            _mainMenu.Show();
         }
     }
 }
