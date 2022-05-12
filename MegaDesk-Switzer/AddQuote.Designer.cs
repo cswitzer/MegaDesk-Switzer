@@ -162,6 +162,7 @@
             this.saveQuoteBtn.TabIndex = 9;
             this.saveQuoteBtn.Text = "Save Quote";
             this.saveQuoteBtn.UseVisualStyleBackColor = true;
+            this.saveQuoteBtn.Click += new System.EventHandler(this.saveQuoteBtn_Click);
             // 
             // cancelBtn
             // 
@@ -171,6 +172,7 @@
             this.cancelBtn.TabIndex = 10;
             this.cancelBtn.Text = "Cancel";
             this.cancelBtn.UseVisualStyleBackColor = true;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // numDrawersLabel
             // 

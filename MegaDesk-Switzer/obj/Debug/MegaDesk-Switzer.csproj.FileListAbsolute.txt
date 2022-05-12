@@ -13,7 +13,6 @@ C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\
 C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\MegaDesk-Switzer.exe
 C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\MegaDesk-Switzer.pdb
 C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk-Switzer.csprojAssemblyReference.cache
-C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.AddQuoteMenu.resources
 C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.MainMenu.resources
 C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.Properties.Resources.resources
 C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk-Switzer.csproj.GenerateResource.cache
@@ -23,3 +22,25 @@ C:\Users\Chase Switzer\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\
 C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.AddQuote.resources
 C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.ViewAllQuotes.resources
 C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.SearchQuotes.resources
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.AddQuote.resources
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.SearchQuotes.resources
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.ViewAllQuotes.resources
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.Buffers.dll
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.Memory.dll
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.Text.Json.dll
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.ValueTuple.dll
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.Buffers.xml
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.Memory.xml
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.Text.Json.xml
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\bin\Debug\System.ValueTuple.xml
+C:\Users\Chase Switzer\Source\Repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk-Switzer.csproj.CopyComplete

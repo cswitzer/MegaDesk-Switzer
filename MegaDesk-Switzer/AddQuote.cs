@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -42,9 +44,34 @@ namespace MegaDesk_Switzer
             numDrawersUpDown.Text = String.Empty;
         }
 
+        private void SaveQuotes(List<DeskQuote> quotes)
+        {
+            var quotesFile = $@"quotes.json";
+
+            // serialize quotes
+        }
+
         private void AddQuoteMenu_FormClosed(object sender, FormClosedEventArgs e)
         {
             _mainMenu.Show();
+        }
+
+        private void saveQuoteBtn_Click(object sender, EventArgs e)
+        {
+            // create new desk
+
+            // create new desk quote
+
+            // get quote price
+
+            // add quote to file
+
+            // show data in display quote form using the current deskQuote object (pass _mainMenu and deskQuote)
+        }
+
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
