@@ -35,11 +35,11 @@ namespace MegaDesk_Switzer
             // make all fields readonly
             customerNameText2.ReadOnly = true;
             widthUpDown2.ReadOnly = true;
-            widthUpDown2.Controls[0].Visible = false;
+            widthUpDown2.Controls[0].Enabled = false;
             depthUpDown2.ReadOnly = true;
-            depthUpDown2.Controls[0].Visible = false;
+            depthUpDown2.Controls[0].Enabled = false;
             numDrawersUpDown2.ReadOnly = true;
-            numDrawersUpDown2.Controls[0].Visible = false;
+            numDrawersUpDown2.Controls[0].Enabled = false;
             comSurfaceMaterial2.Enabled = false;
             comDelivery2.Enabled = false;
             totalPriceText.ReadOnly = true;

@@ -64,12 +64,36 @@ namespace MegaDesk_Switzer
             return GenericEnum.ToString();
         }
 
+        private void AddQuoteToFile(DeskQuote deskQuote)
+        {
+            var quotesFile = @"quotes.json";
+            List<DeskQuote> deskQuotes = new List<DeskQuote>();
+
+            if (File.Exists(quotesFile))
+            {
+                using (StreamReader reader = new StreamReader(quotesFile))
+                {
+                    string quotes = reader.ReadToEnd();
+
+                    if (quotes.Length > 0)
+                    {
+                        // convert all json data from file into list of objects and add them to the list
+                        deskQuotes = JsonSerializer.Deserialize<List<DeskQuote>>(quotes);
+                    }
+                }
+            }
+
+            // add the new desk quote and save the file
+            deskQuotes.Add(deskQuote);
+            SaveQuotes(deskQuotes);
+        }
+
         private void SaveQuotes(List<DeskQuote> quotes)
         {
             var quotesFile = $@"quotes.json";
 
             // serialize quotes (convert object to json text)
-            var serializedQuotes = System.Text.Json.JsonSerializer.Serialize(quotes);
+            var serializedQuotes = JsonSerializer.Serialize(quotes);
 
             File.WriteAllText(quotesFile, serializedQuotes);
         }
@@ -102,8 +126,11 @@ namespace MegaDesk_Switzer
             // TODO: implement GetQuotePrice() and show deskQuote data in "DisplayQuote"
             var quotePrice = deskQuote.GetQuotePrice();
 
+            // calculate quote price
+            deskQuote.QuotePrice = quotePrice == null ? 100 : quotePrice;
+
             // add quote to file
-            deskQuote.QuotePrice = quotePrice;
+            AddQuoteToFile(deskQuote);
 
             // show data in display quote form using the current deskQuote object (pass _mainMenu and deskQuote)
             DisplayQuote displayQuote = new DisplayQuote(_mainMenu, deskQuote);
