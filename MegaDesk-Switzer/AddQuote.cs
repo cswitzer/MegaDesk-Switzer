@@ -126,8 +126,8 @@ namespace MegaDesk_Switzer
             // TODO: implement GetQuotePrice() and show deskQuote data in "DisplayQuote"
             var quotePrice = deskQuote.GetQuotePrice();
 
-            // calculate quote price
-            deskQuote.QuotePrice = quotePrice == null ? 100 : quotePrice;
+            // calculate quote price (ternary operator test until GetQuotePrice() is implemented)
+            deskQuote.QuotePrice = quotePrice == 0 ? 100 : quotePrice;
 
             // add quote to file
             AddQuoteToFile(deskQuote);
