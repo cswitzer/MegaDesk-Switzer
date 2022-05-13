@@ -63,3 +63,4 @@ C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk
 C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk-Switzer.csproj.CopyComplete
 C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk-Switzer.exe
 C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk-Switzer.pdb
+C:\Users\Chase\source\repos\MegaDesk-Switzer\MegaDesk-Switzer\obj\Debug\MegaDesk_Switzer.DisplayQuote.resources

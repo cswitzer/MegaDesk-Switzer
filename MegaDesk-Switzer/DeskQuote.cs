@@ -40,6 +40,7 @@ namespace MegaDesk_Switzer
 
         public decimal GetQuotePrice()
         {
+            
             return 0;
         }
     }
