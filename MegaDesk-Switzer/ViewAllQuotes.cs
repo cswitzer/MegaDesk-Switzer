@@ -50,7 +50,16 @@ namespace MegaDesk_Switzer
         private void ViewAllQuotes_Load(object sender, EventArgs e)
         {
             _deskQuotes = GetAllQuotes();
-            dataGridView1.DataSource = _deskQuotes;
+            dataGridView1.DataSource = _deskQuotes.Select(quote => new
+            {
+                quote.CustomerName, 
+                quote.QuotePrice, 
+                quote.QuoteDate, 
+                quote.Desk.Width,
+                quote.Desk.Depth, 
+                quote.Desk.NumberOfDrawers, 
+                quote.Desk.DesktopMaterial
+            }).ToList();
         }
     }
 }
