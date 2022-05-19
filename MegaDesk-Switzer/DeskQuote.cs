@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace MegaDesk_Switzer
 {
     public enum RushOrderType
     {
+        [Description("")]
         Express,
         Firstclass,
         Priority,
@@ -35,6 +37,7 @@ namespace MegaDesk_Switzer
 
         public decimal GetQuotePrice()
         {
+            // remember to use the "this" keyword
             return 0;
         }
     }

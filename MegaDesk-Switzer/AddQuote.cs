@@ -59,6 +59,8 @@ namespace MegaDesk_Switzer
         private void saveQuoteBtn_Click(object sender, EventArgs e)
         {
             // create new desk
+            var desk = new Desk()
+            var desk2 = new Desk()
 
             // create new desk quote
 
