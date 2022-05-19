@@ -92,7 +92,7 @@ namespace MegaDesk_Switzer
         {
             var quotesFile = $@"quotes.json";
 
-            // serialize quotes (convert object to json text)
+            // serialize quotes (convert object to json string)
             var serializedQuotes = JsonSerializer.Serialize(quotes);
 
             File.WriteAllText(quotesFile, serializedQuotes);

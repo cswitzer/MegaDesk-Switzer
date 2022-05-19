@@ -45,3 +45,9 @@ namespace MegaDesk_Switzer
         }
     }
 }
+
+[
+[20 30 40] 3 day
+[30 40 50] 5 day
+[40 50 60] 7 day
+]
