@@ -123,11 +123,8 @@ namespace MegaDesk_Switzer
                 OrderType = (RushOrderType)comDelivery.SelectedIndex // using index since we have desc.
             };
 
-            // TODO: implement GetQuotePrice() and show deskQuote data in "DisplayQuote"
-            var quotePrice = deskQuote.GetQuotePrice();
-
             // calculate quote price (ternary operator test until GetQuotePrice() is implemented)
-            deskQuote.QuotePrice = quotePrice == 0 ? 100 : quotePrice;
+            deskQuote.QuotePrice = deskQuote.GetQuotePrice();
 
             // add quote to file
             AddQuoteToFile(deskQuote);

@@ -31,6 +31,7 @@ namespace MegaDesk_Switzer
             numDrawersUpDown2.Value = _deskQuote.Desk.NumberOfDrawers;
             comSurfaceMaterial2.Text = _deskQuote.Desk.DesktopMaterial.ToString();
             comDelivery2.Text = _deskQuote.OrderType.ToString();
+            totalPriceText.Text = _deskQuote.QuotePrice.ToString();
 
             // make all fields readonly
             customerNameText2.ReadOnly = true;

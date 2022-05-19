@@ -55,6 +55,7 @@ namespace MegaDesk_Switzer
                 quote.CustomerName, 
                 quote.QuotePrice, 
                 quote.QuoteDate, 
+                quote.OrderType,
                 quote.Desk.Width,
                 quote.Desk.Depth, 
                 quote.Desk.NumberOfDrawers, 
