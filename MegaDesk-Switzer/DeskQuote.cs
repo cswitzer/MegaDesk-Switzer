@@ -9,13 +9,16 @@ namespace MegaDesk_Switzer
 {
     public enum RushOrderType
     {
-        [Description("")]
+        [Description("Rush 3 Days")]
         Express,
+        [Description("Rush 5 Days")]
         Firstclass,
+        [Description("Rush 7 Days")]
         Priority,
+        [Description("No Rush")]
         Normal
     }
-    internal class DeskQuote
+    public class DeskQuote
     {
         // private variables
         private int[,] _rushOrderPrices;

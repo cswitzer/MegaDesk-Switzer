@@ -14,7 +14,7 @@ namespace MegaDesk_Switzer
         Veneer,
         Pine
     }
-    internal class Desk
+    public class Desk
     {
         public const short MIN_WIDTH = 24;
         public const short MAX_WIDTH = 96;
