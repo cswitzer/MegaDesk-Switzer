@@ -52,14 +52,14 @@ namespace MegaDesk_Switzer
             _deskQuotes = GetAllQuotes();
             dataGridView1.DataSource = _deskQuotes.Select(quote => new
             {
-                quote.CustomerName, 
-                quote.QuotePrice, 
-                quote.QuoteDate, 
-                quote.OrderType,
-                quote.Desk.Width,
-                quote.Desk.Depth, 
-                quote.Desk.NumberOfDrawers, 
-                quote.Desk.DesktopMaterial
+                Date = quote.QuoteDate,
+                Customer = quote.CustomerName,
+                Width = quote.Desk.Width,
+                Depth = quote.Desk.Depth,
+                NumberOfDrawers = quote.Desk.NumberOfDrawers,
+                DesktopMaterial = quote.Desk.DesktopMaterial,
+                OrderType = quote.OrderType,
+                Price = quote.QuotePrice.ToString("c"),  
             }).ToList();
         }
     }
